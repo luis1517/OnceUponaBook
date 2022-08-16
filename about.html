@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Once Upon a Book</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/db8db497df.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <section>
+        <img src="/aquarela.jpg" alt="" class="mosque">
+        <header>
+            <a href="index.html" class="logo">Once Upon a Book</a>
+            <div class="toggle"></div>
+            <ul class="navigation">
+                <li><a href="index.html" style="--i:1;">Home</a></li>
+                <li><a href="#" style="--i:2;"class="active">About</a></li>
+                <li><a href="blog.html" style="--i:3;">Blog</a></li>
+                <li><a href="contact.html" style="--i:4;">Contact</a></li>
+            </ul>
+        </header>
+        <div class="content">
+            <div class="textBox">
+                <h2>About me</h2>
+                <p>I love the sound of the rain, I enjoy baking, nature, animals, acting, singing, dancing, exercising, and love reading, nothing better to calm me down and ground me</p>
+                <p>I am open to any story really but I am specially drawn to dark stories with mystery, mythology, magic, witches and witchcraft, werewolves and vampires. My favorite book to read on Holiday season is "Greenglass House by Kate Milford"</p>
+                <a href="index.html">Go Back</a>
+            </div>
+        </div>
+
+        <ul class="sci">
+            <li><a href="https://www.goodreads.com/user/show/123590600-norma-esquivel" target="_blank" style="--i:12;"><img src="/Goodreads_logo.svg" alt=""></a></li>
+        </ul>
+    </section>  
+
+    <!-- Active menu responsive design -->
+    <script>
+        const menuToggle = document.querySelector('.toggle');
+        const navigation = document.querySelector('.navigation');
+        menuToggle.onclick = function() {
+            menuToggle.classList.toggle('active');
+            navigation.classList.toggle('active');
+            
+        }
+    </script>
+</body> 
+</html>

@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Once Upon a Book</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/db8db497df.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <section>
+        <img src="/blog.png" alt="" class="aqua">
+        <header>
+            <a href="index.html" class="logo">Once Upon a Book</a>
+            <div class="toggle"></div>
+            <ul class="navigation">
+                <li><a href="index.html" style="--i:1;">Home</a></li>
+                <li><a href="about.html" style="--i:2;">About</a></li>
+                <li><a href="#" style="--i:3;"class="active">Blog</a></li>
+                <li><a href="contact.html" style="--i:4;">Contact</a></li>
+            </ul>
+        </header>
+   <!-- Active menu responsive design -->
+    <script>
+        const menuToggle = document.querySelector('.toggle');
+        const navigation = document.querySelector('.navigation');
+        menuToggle.onclick = function() {
+            menuToggle.classList.toggle('active');
+            navigation.classList.toggle('active');
+            
+        }
+    </script>
+    <div class="container">
+        <div class="card">
+            <div class="content">
+                <h2>White, J.A.</h2>
+                <h3>A Path Begins (The Thickety, #1)</h3>
+                <p>It was a joy to read this book. I came across the series when I was at the library. This first book it´s a great story full of other stories along the way, great to read regardless of your age and easy to read too. I always liked books that talk about magic and J.A. White was brilliant to bring old spooky stories with a twist of hard truths into a novel.</p>
+                <a href="https://www.goodreads.com/book/show/18651970-a-path-begins" target="_blank">Read More</a>
+            </div>
+        </div>
+        <div class="card">
+            <div class="content">
+                <h2>Milford, Kate</h2>
+                <h3>Greenglass House (Greenglass House, #1)</h3>
+                <p>This one is my Holiday Season favorite book. I have to re-read it every time. I love the story, the mistery and characters, it makes me want to be a forever guest at the Green Glass House. Georgeous story to read next to a fire when is snowing outside with a cup of hot chocolate </p>
+                <a href="https://www.goodreads.com/book/show/18222716-greenglass-house" target="_blank">Read More</a>
+            </div>
+        </div> 
+        <div class="card">
+            <div class="content">
+                <h2>Vernon, Ursula</h2>
+                <h3>Castle Hangnail</h3>
+                <p>Such a beautiful book I got from the Library and I was delighted by the story and the characters. One of those books that make me feel cozy!</p>
+                <a href="https://www.goodreads.com/book/show/22504710-castle-hangnail" target="_blank">Read More</a>
+            </div>
+        </div>
+        <div class="card">
+            <div class="content">
+                <h2>White, J.A.</h2>
+                <h3>The Whispering Trees (The Thickety, #2)</h3>
+                <p>This second book was again very pleasant to read. Now Kara have to enter the Thickety, when we thought she cannot suffered enough, well, we were wrong. She undergoes deception, confusion and uncertainty again.</p>
+                <a href="https://www.goodreads.com/book/show/22583008-the-whispering-trees" target="_blank">Read More</a>
+            </div>
+        </div>
+        <div class="card">
+            <div class="content">
+                <h2>White, J.A.</h2>
+                <h3>Well of Witches (The Thickety, #3)</h3>
+                <p>Very nice book full of values and topics one can reflect on. In this 3th book Kara realizes that's she is more than enough and that her flaw is self-doubt since she has all the potential but she often forgets one thing- believing in herself.</p>
+                <a href="https://www.goodreads.com/book/show/25742644-well-of-witches" target="_blank">Read More</a>
+            </div>
+        </div>    
+    </div>
+    <script type="text/javascript" src="vanilla-tilt.js"></script>
+    <script>
+        VanillaTilt.init(document.querySelectorAll(".card")
+        ,{
+            max: 25,
+		    speed: 400,
+            glare:true,
+            "max-glare": 1,
+        });
+    </script>   
+</body>     
+</html>

@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Once Upon a Book</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/db8db497df.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <section>
+        <img src="/cat.jpg" alt="" class="mosque">
+        <header>
+            <a href="index.html" class="logo">Once Upon a Book</a>
+            <div class="toggle"></div>
+            <ul class="navigation">
+                <li><a href="index.html" style="--i:1;">Home</a></li>
+                <li><a href="about.html" style="--i:2;">About</a></li>
+                <li><a href="blog.html" style="--i:3;">Blog</a></li>
+                <li><a href="#" style="--i:4;"class="active">Contact</a></li>
+            </ul>
+        </header>
+        <div class="content">
+            <div class="textBox">
+                <h2>Follow me on Goodreads</h2>
+                <p>For more information about books I love, authors, and new trends, keep track of the books you may want to read and be part of the world's largest community of book lovers</p>
+                <a href="index.html">Go Back</a>
+            </div>
+        </div>
+
+        <ul class="sci">
+            <li><a href="https://www.goodreads.com/user/show/123590600-norma-esquivel" target="_blank" style="--i:12;"><img src="/Goodreads_logo.svg" alt=""></a></li>
+        </ul>
+    </section>
+
+    <!-- Active menu responsive design -->
+    <script>
+        const menuToggle = document.querySelector('.toggle');
+        const navigation = document.querySelector('.navigation');
+        menuToggle.onclick = function() {
+            menuToggle.classList.toggle('active');
+            navigation.classList.toggle('active');
+            
+        }
+    </script>
+</body> 
+</html>
